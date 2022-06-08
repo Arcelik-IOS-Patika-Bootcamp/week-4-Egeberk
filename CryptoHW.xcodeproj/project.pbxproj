@@ -13,6 +13,8 @@
 		22752BCE2851040400C49386 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22752BCC2851040400C49386 /* Main.storyboard */; };
 		22752BD02851040500C49386 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22752BCF2851040500C49386 /* Assets.xcassets */; };
 		22752BD32851040500C49386 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22752BD12851040500C49386 /* LaunchScreen.storyboard */; };
+		22752BDC285118C200C49386 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22752BDA285118C200C49386 /* CustomCollectionViewCell.swift */; };
+		22752BDD285118C200C49386 /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22752BDB285118C200C49386 /* CustomCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		22752BCF2851040500C49386 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22752BD22851040500C49386 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22752BD42851040500C49386 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22752BDA285118C200C49386 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		22752BDB285118C200C49386 /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				22752BCF2851040500C49386 /* Assets.xcassets */,
 				22752BD12851040500C49386 /* LaunchScreen.storyboard */,
 				22752BD42851040500C49386 /* Info.plist */,
+				22752BDA285118C200C49386 /* CustomCollectionViewCell.swift */,
+				22752BDB285118C200C49386 /* CustomCollectionViewCell.xib */,
 			);
 			path = CryptoHW;
 			sourceTree = "<group>";
@@ -127,6 +133,7 @@
 				22752BD32851040500C49386 /* LaunchScreen.storyboard in Resources */,
 				22752BD02851040500C49386 /* Assets.xcassets in Resources */,
 				22752BCE2851040400C49386 /* Main.storyboard in Resources */,
+				22752BDD285118C200C49386 /* CustomCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +147,7 @@
 				22752BCB2851040400C49386 /* ViewController.swift in Sources */,
 				22752BC72851040400C49386 /* AppDelegate.swift in Sources */,
 				22752BC92851040400C49386 /* SceneDelegate.swift in Sources */,
+				22752BDC285118C200C49386 /* CustomCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
