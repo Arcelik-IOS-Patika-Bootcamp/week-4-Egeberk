@@ -15,6 +15,7 @@
 		22752BD32851040500C49386 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22752BD12851040500C49386 /* LaunchScreen.storyboard */; };
 		22752BDC285118C200C49386 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22752BDA285118C200C49386 /* CustomCollectionViewCell.swift */; };
 		22752BDD285118C200C49386 /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22752BDB285118C200C49386 /* CustomCollectionViewCell.xib */; };
+		22E9E5FF2854B1A30044A346 /* CryptoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E9E5FE2854B1A30044A346 /* CryptoModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		22752BD42851040500C49386 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22752BDA285118C200C49386 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		22752BDB285118C200C49386 /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
+		22E9E5FE2854B1A30044A346 /* CryptoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				22752BD42851040500C49386 /* Info.plist */,
 				22752BDA285118C200C49386 /* CustomCollectionViewCell.swift */,
 				22752BDB285118C200C49386 /* CustomCollectionViewCell.xib */,
+				22E9E5FE2854B1A30044A346 /* CryptoModel.swift */,
 			);
 			path = CryptoHW;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				22752BC72851040400C49386 /* AppDelegate.swift in Sources */,
 				22752BC92851040400C49386 /* SceneDelegate.swift in Sources */,
 				22752BDC285118C200C49386 /* CustomCollectionViewCell.swift in Sources */,
+				22E9E5FF2854B1A30044A346 /* CryptoModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
