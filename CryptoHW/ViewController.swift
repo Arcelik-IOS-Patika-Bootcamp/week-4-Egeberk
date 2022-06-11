@@ -13,9 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var searchBar: UISearchBar!
     
-    /* Data
-     TODO: Create currency struct
-     */
+    // Data
     private var currencies:[Crypto] = []
     private var filteredCurrencies:[Crypto] = []
     
@@ -42,10 +40,11 @@ class ViewController: UIViewController {
         collectionView.register(.init(nibName: "CustomCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CustomCollectionViewCell")
     }
     
-    // Fetch crypto currency data from api
+    // MARK: API Call
     private func fetchData(){
         if let url = URL.init(string: "https://api.nomics.com/v1/currencies/ticker?key=bf6bf2bc4da0f3eb7194d88d021513897b17fbd3&interval=1d&convert=EUR")
         {
+            // Try to fetch crypto data
             let task = URLSession.shared.dataTask(with: url){ [weak self] data, response, error in
                 guard let self = self else { return }
                 do{
@@ -69,7 +68,7 @@ class ViewController: UIViewController {
         }
     }
 }
-
+// MARK: Search Bar Delegate
 extension ViewController:UISearchBarDelegate{
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         // Nothing is being searched, show full list
@@ -77,7 +76,7 @@ extension ViewController:UISearchBarDelegate{
             filteredCurrencies = currencies
             collectionView.reloadData()
         }
-        // Show filtered list
+        // Filter list by name
         else
         {
             filteredCurrencies = currencies.filter{$0.name.lowercased().contains(searchText.lowercased())}
@@ -86,11 +85,9 @@ extension ViewController:UISearchBarDelegate{
     }
 }
 
-extension ViewController:UICollectionViewDelegate{
+// MARK: CollectionView Delegate & Data Source
+extension ViewController:UICollectionViewDataSource,UICollectionViewDelegate {
     
-}
-
-extension ViewController:UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         return filteredCurrencies.count
@@ -101,12 +98,10 @@ extension ViewController:UICollectionViewDataSource{
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CustomCollectionViewCell", for: indexPath) as! CustomCollectionViewCell
         
         let rowitem = filteredCurrencies[indexPath.row]
-        
-        // Cell data
+        // Set cell data
         cell.nameLabel.text = rowitem.name
         
         return cell
     }
-    
 }
 

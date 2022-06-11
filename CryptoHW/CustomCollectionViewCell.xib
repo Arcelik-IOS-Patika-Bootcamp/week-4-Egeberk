@@ -17,8 +17,9 @@
                 <rect key="frame" x="0.0" y="0.0" width="170" height="109"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gYa-gc-j5S">
+                    <view contentMode="scaleToFill" id="gYa-gc-j5S">
                         <rect key="frame" x="0.0" y="0.0" width="170" height="109"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="00v-ZW-bNF">
                                 <rect key="frame" x="8" y="8" width="154" height="93"/>
@@ -50,7 +51,7 @@
                 <outlet property="containerView" destination="gYa-gc-j5S" id="8Ud-Ja-tfy"/>
                 <outlet property="nameLabel" destination="00v-ZW-bNF" id="BqO-l3-mNZ"/>
             </connections>
-            <point key="canvasLocation" x="313.04347826086956" y="103.45982142857143"/>
+            <point key="canvasLocation" x="311.59420289855075" y="103.45982142857143"/>
         </collectionViewCell>
     </objects>
     <resources>
