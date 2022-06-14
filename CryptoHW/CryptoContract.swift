@@ -14,7 +14,7 @@ protocol CryptoViewProtocol: AnyObject{
 }
 
 // MARK: Presenter
-protocol CryptoPresenter:AnyObject {
+protocol CryptoPresenterProtocol:AnyObject {
     var view:CryptoHome.View? {get set}
     var interactor:CryptoHome.Interactor! {get set}
     func viewDidLoad()
@@ -22,7 +22,7 @@ protocol CryptoPresenter:AnyObject {
 }
 
 // MARK: Interactor
-protocol CryptoInteractor: AnyObject {
+protocol CryptoInteractorProtocol: AnyObject {
     var presenter:CryptoHome.Presenter? {get set}
     var data:Crypto?  {get}
     
@@ -31,6 +31,6 @@ protocol CryptoInteractor: AnyObject {
 
 struct CryptoHome{
     typealias View = CryptoViewProtocol
-    typealias Interactor = CryptoInteractor
-    typealias Presenter = CryptoPresenter
+    typealias Interactor = CryptoInteractorProtocol
+    typealias Presenter = CryptoPresenterProtocol
 }
