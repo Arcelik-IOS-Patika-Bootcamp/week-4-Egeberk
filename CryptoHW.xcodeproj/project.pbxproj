@@ -16,6 +16,9 @@
 		22752BDC285118C200C49386 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22752BDA285118C200C49386 /* CustomCollectionViewCell.swift */; };
 		22752BDD285118C200C49386 /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22752BDB285118C200C49386 /* CustomCollectionViewCell.xib */; };
 		228AF1342858F79B00750D60 /* CryptoContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228AF1332858F79B00750D60 /* CryptoContract.swift */; };
+		228AF136285903AB00750D60 /* CryptoHomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228AF135285903AB00750D60 /* CryptoHomeInteractor.swift */; };
+		228AF1382859053200750D60 /* CryptoHomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228AF1372859053200750D60 /* CryptoHomePresenter.swift */; };
+		228AF13A28590A6D00750D60 /* CryptoCollectionViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228AF13928590A6D00750D60 /* CryptoCollectionViewHelper.swift */; };
 		22E9E5FF2854B1A30044A346 /* CryptoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E9E5FE2854B1A30044A346 /* CryptoModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +34,9 @@
 		22752BDA285118C200C49386 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		22752BDB285118C200C49386 /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
 		228AF1332858F79B00750D60 /* CryptoContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoContract.swift; sourceTree = "<group>"; };
+		228AF135285903AB00750D60 /* CryptoHomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoHomeInteractor.swift; sourceTree = "<group>"; };
+		228AF1372859053200750D60 /* CryptoHomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoHomePresenter.swift; sourceTree = "<group>"; };
+		228AF13928590A6D00750D60 /* CryptoCollectionViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCollectionViewHelper.swift; sourceTree = "<group>"; };
 		22E9E5FE2854B1A30044A346 /* CryptoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,6 +81,9 @@
 				22752BDB285118C200C49386 /* CustomCollectionViewCell.xib */,
 				22E9E5FE2854B1A30044A346 /* CryptoModel.swift */,
 				228AF1332858F79B00750D60 /* CryptoContract.swift */,
+				228AF135285903AB00750D60 /* CryptoHomeInteractor.swift */,
+				228AF1372859053200750D60 /* CryptoHomePresenter.swift */,
+				228AF13928590A6D00750D60 /* CryptoCollectionViewHelper.swift */,
 			);
 			path = CryptoHW;
 			sourceTree = "<group>";
@@ -152,9 +161,12 @@
 			files = (
 				228AF1342858F79B00750D60 /* CryptoContract.swift in Sources */,
 				22752BCB2851040400C49386 /* ViewController.swift in Sources */,
+				228AF136285903AB00750D60 /* CryptoHomeInteractor.swift in Sources */,
 				22752BC72851040400C49386 /* AppDelegate.swift in Sources */,
 				22752BC92851040400C49386 /* SceneDelegate.swift in Sources */,
 				22752BDC285118C200C49386 /* CustomCollectionViewCell.swift in Sources */,
+				228AF13A28590A6D00750D60 /* CryptoCollectionViewHelper.swift in Sources */,
+				228AF1382859053200750D60 /* CryptoHomePresenter.swift in Sources */,
 				22E9E5FF2854B1A30044A346 /* CryptoModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

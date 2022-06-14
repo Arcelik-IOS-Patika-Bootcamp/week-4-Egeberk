@@ -10,7 +10,7 @@ import Foundation
 // MARK: View
 protocol CryptoViewProtocol: AnyObject{
     var presenter:CryptoHome.Presenter! {get set}
-    func updateCollectionViewData(_ data:Crypto)
+    func updateCollectionViewData(_ data: [Crypto])
 }
 
 // MARK: Presenter
@@ -24,7 +24,8 @@ protocol CryptoPresenterProtocol:AnyObject {
 // MARK: Interactor
 protocol CryptoInteractorProtocol: AnyObject {
     var presenter:CryptoHome.Presenter? {get set}
-    var data:Crypto?  {get}
+    var data: [Crypto]? {get}
+    var filteredData: [Crypto]? {get}
     
     func fetchData()
 }
